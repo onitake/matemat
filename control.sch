@@ -38,9 +38,9 @@ encoding utf-8
 Sheet 1 1
 Title "Matemat Control Circuit"
 Date "3 apr 2015"
-Rev "4"
+Rev "5"
 Comp "Chaostreff Basel"
-Comment1 ""
+Comment1 "Copyright (c) 2015 Gregor Riepl"
 Comment2 ""
 Comment3 ""
 Comment4 ""
