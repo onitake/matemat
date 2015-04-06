@@ -1,1 +1,4 @@
 *.net
+*.bak
+*.dcm
+_autosave*
