@@ -1,4 +1,4 @@
-update=Sun 05 Apr 2015 03:38:02 CEST
+update=Mon 06 Apr 2015 14:29:59 CEST
 last_client=pcbnew
 [cvpcb]
 version=1
@@ -63,7 +63,7 @@ SolderMaskClearance=0.200000000000
 SolderMaskMinWidth=0.000000000000
 DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.150000000000
-ModuleOutlineThickness=0.150000000000
+ModuleOutlineThickness=0.050000000000
 [pcbnew/libraries]
 LibDir=
 LibName1=sockets
@@ -83,3 +83,4 @@ LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
 LibName17=matemat
+LibName18=Footprint-Symbols_RevD_28Aug2012
