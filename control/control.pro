@@ -1,4 +1,4 @@
-update=Mon 06 Apr 2015 14:29:59 CEST
+update=Tue 08 Sep 2015 17:59:21 CEST
 last_client=pcbnew
 [cvpcb]
 version=1
@@ -7,7 +7,7 @@ NetIExt=net
 EquName1=devcms
 [eeschema]
 version=1
-LibDir=
+LibDir=..
 NetFmtName=
 RptD_X=0
 RptD_Y=100
@@ -65,7 +65,7 @@ DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.150000000000
 ModuleOutlineThickness=0.050000000000
 [pcbnew/libraries]
-LibDir=
+LibDir=..
 LibName1=sockets
 LibName2=connect
 LibName3=discret
