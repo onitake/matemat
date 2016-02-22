@@ -2,7 +2,7 @@ Matemat
 =======
 
 The Matemat is a vending machine for carbonated soft drinks.
-Its hardware and software were designed by members of the
+All hardware and software was designed by members of
 (Chaostreff Basel)[1] and released in the form of circuit
 diagrams, printed circuit board layouts and source code
 for anyone to use and modify.
@@ -12,13 +12,14 @@ permissible. Please see the accompanying LICENSE file for
 details.
 
 The name "Matemat" is a portmanteau of "mate" (as in mate
-tea) and "automat" (as in the German word for vending
-machine). It was devised specifically to dispense mate tea
-based soft drinks, but may be used for other types of
-beverages as well.
+tea) and "automat" (the German word for vending machine).
 
-For the first Matemat prototype to be bult, an old vending
-machine with built in refrigerator was repurposed.
+The device is mainly intended to dispense mate tea based
+soft drinks, but may be used for other types of beverages
+too.
+
+To build the first prototype, an old vending machine with
+a cooled bottle compartment was repurposed.
 
 The software source code can be (downloaded separately)[2].
 
