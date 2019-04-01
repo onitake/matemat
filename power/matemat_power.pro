@@ -1,5 +1,5 @@
-update=Di 21 Aug 2018 23:22:20 CEST
-last_client=kicad
+update=Mon 01 Apr 2019 12:20:18 CEST
+last_client=eeschema
 [pcbnew]
 version=1
 LastNetListRead=matemat_power.net

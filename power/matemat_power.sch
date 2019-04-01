@@ -1,42 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:special
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:sto
-LIBS:sto2
-LIBS:40xx
-LIBS:uln-udn
-LIBS:optocoupler
-LIBS:diode-1_corr
+EESchema Schematic File Version 4
 LIBS:matemat_power-cache
-EELAYER 27 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -63,7 +27,7 @@ F0 "logic_psu" 60
 F1 "logic_psu.sch" 60
 $EndSheet
 $Comp
-L CONN_2 J1
+L matemat_power-rescue:CONN_2 J1
 U 1 1 50FF19C8
 P 3400 1950
 F 0 "J1" V 3350 1950 50  0000 C CNN
@@ -76,7 +40,7 @@ F 5 "0,84" H 3400 1950 60  0001 C CNN "prix"
 	-1   0    0    1   
 $EndComp
 $Comp
-L FUSE F1
+L matemat_power-rescue:FUSE F1
 U 1 1 50FF19CE
 P 4100 2050
 F 0 "F1" H 4200 2100 40  0000 C CNN
@@ -87,7 +51,7 @@ F 3 "" H 4100 2050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR2
+L matemat_power-rescue:GNDPWR #PWR2
 U 1 1 50FF19D4
 P 4700 2250
 F 0 "#PWR2" H 4700 2300 40  0001 C CNN
@@ -100,7 +64,7 @@ $EndComp
 Wire Wire Line
 	3750 2050 3850 2050
 $Comp
-L HT #PWR1
+L matemat_power-rescue:HT #PWR1
 U 1 1 50FF19DD
 P 4700 1800
 F 0 "#PWR1" H 4700 1920 20  0001 C CNN
@@ -111,7 +75,7 @@ F 3 "" H 4700 1800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_2 J2
+L matemat_power-rescue:CONN_2 J2
 U 1 1 50FF2514
 P 3400 1500
 F 0 "J2" V 3350 1500 50  0000 C CNN
@@ -126,11 +90,11 @@ $EndComp
 Wire Wire Line
 	3750 1600 4400 1600
 Wire Wire Line
-	3750 1850 4700 1850
+	3750 1850 4500 1850
 Wire Wire Line
 	4700 1850 4700 1800
 Wire Wire Line
-	4350 2050 4700 2050
+	4350 2050 4400 2050
 Wire Wire Line
 	4700 2050 4700 2250
 Wire Wire Line
@@ -142,7 +106,7 @@ Wire Wire Line
 	4500 1400 4500 1850
 Connection ~ 4500 1850
 $Comp
-L CONN_2 J3
+L matemat_power-rescue:CONN_2 J3
 U 1 1 50FF3A33
 P 3400 2900
 F 0 "J3" V 3350 2900 50  0000 C CNN
@@ -155,7 +119,7 @@ F 5 "0,84" H 3400 2900 60  0001 C CNN "prix"
 	-1   0    0    1   
 $EndComp
 $Comp
-L FUSE F2
+L matemat_power-rescue:FUSE F2
 U 1 1 50FF3A39
 P 4100 3000
 F 0 "F2" H 4200 3050 40  0000 C CNN
@@ -166,7 +130,7 @@ F 3 "" H 4100 3000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDPWR #PWR4
+L matemat_power-rescue:GNDPWR #PWR4
 U 1 1 50FF3A3F
 P 4700 3200
 F 0 "#PWR4" H 4700 3250 40  0001 C CNN
@@ -177,9 +141,9 @@ F 3 "" H 4700 3200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 3000 3850 3000
+	3750 3000 3800 3000
 $Comp
-L HT #PWR3
+L matemat_power-rescue:HT #PWR3
 U 1 1 50FF3A46
 P 4700 2750
 F 0 "#PWR3" H 4700 2870 20  0001 C CNN
@@ -205,7 +169,7 @@ Wire Wire Line
 	3800 3300 3800 3000
 Connection ~ 3800 3000
 $Comp
-L CONNECTOR TROU1
+L matemat_power-rescue:CONNECTOR TROU1
 U 1 1 511ADD13
 P 8200 2250
 F 0 "TROU1" H 8550 2350 70  0000 C CNN
@@ -216,7 +180,7 @@ F 3 "" H 8200 2250 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONNECTOR TROU2
+L matemat_power-rescue:CONNECTOR TROU2
 U 1 1 511ADD19
 P 8650 2250
 F 0 "TROU2" H 9000 2350 70  0000 C CNN
@@ -227,7 +191,7 @@ F 3 "" H 8650 2250 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONNECTOR TROU3
+L matemat_power-rescue:CONNECTOR TROU3
 U 1 1 511ADD1F
 P 9100 2250
 F 0 "TROU3" H 9450 2350 70  0000 C CNN
@@ -238,7 +202,7 @@ F 3 "" H 9100 2250 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONNECTOR TROU4
+L matemat_power-rescue:CONNECTOR TROU4
 U 1 1 511ADD25
 P 9550 2250
 F 0 "TROU4" H 9900 2350 70  0000 C CNN
@@ -249,7 +213,7 @@ F 3 "" H 9550 2250 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L CONNECTOR TROU5
+L matemat_power-rescue:CONNECTOR TROU5
 U 1 1 511AC93D
 P 9950 2250
 F 0 "TROU5" H 10300 2350 70  0000 C CNN
@@ -259,4 +223,10 @@ F 3 "" H 9950 2250 60  0001 C CNN
 	1    9950 2250
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	4400 2050 4700 2050
+Wire Wire Line
+	4500 1850 4700 1850
+Wire Wire Line
+	3800 3000 3850 3000
 $EndSCHEMATC
