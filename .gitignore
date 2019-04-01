@@ -4,3 +4,6 @@
 *.dcm
 *.bck
 _autosave*
+sym-lib-table
+*-backup
+*-rescue.lib
