@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:poweriface-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -469,4 +470,24 @@ Connection ~ 7600 5800
 Wire Wire Line
 	7600 5500 8000 5500
 Connection ~ 7600 5500
+$Comp
+L Device:R R?
+U 1 1 5CA5C44B
+P 6200 4950
+F 0 "R?" V 6407 4950 50  0000 C CNN
+F 1 "0" V 6316 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 4950 50  0001 C CNN
+F 3 "~" H 6200 4950 50  0001 C CNN
+	1    6200 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 4950 6350 4800
+Connection ~ 6350 4800
+Text Label 6050 4950 2    50   ~ 0
+HISPEED
+Text Label 4900 3800 0    50   ~ 0
+HISPEED
+Text Label 4550 4900 0    50   ~ 0
+HISPEED
 $EndSCHEMATC
