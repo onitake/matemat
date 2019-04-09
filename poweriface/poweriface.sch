@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Matemat Power Board CAN Interface"
+Date "2019-04-05"
+Rev "1"
+Comp "CCC Basel"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -485,8 +485,6 @@ Wire Wire Line
 	6350 4950 6350 4800
 Connection ~ 6350 4800
 Text Label 6050 4950 2    50   ~ 0
-HISPEED
-Text Label 4900 3800 0    50   ~ 0
 HISPEED
 Text Label 4550 4900 0    50   ~ 0
 HISPEED
