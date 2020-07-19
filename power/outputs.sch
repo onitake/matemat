@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:matemat_power-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L matemat_power-rescue:+12V #PWR11
+L matemat_power-rescue:+12V-matemat_power-rescue #PWR11
 U 1 1 50F5F502
 P 4550 6900
 F 0 "#PWR11" H 4550 6850 20  0001 C CNN
@@ -26,7 +25,7 @@ F 3 "" H 4550 6900 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L matemat_power-rescue:+5V #PWR10
+L matemat_power-rescue:+5V-matemat_power-rescue #PWR10
 U 1 1 50F5F508
 P 2850 6800
 F 0 "#PWR10" H 2850 6890 20  0001 C CNN
@@ -37,7 +36,7 @@ F 3 "" H 2850 6800 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L matemat_power-rescue:GND #PWR12
+L matemat_power-rescue:GND-matemat_power-rescue #PWR12
 U 1 1 50F5F50E
 P 4600 6800
 F 0 "#PWR12" H 4600 6800 30  0001 C CNN
@@ -48,7 +47,7 @@ F 3 "" H 4600 6800 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L matemat:Bus_I2C J4
+L matemat_power-rescue:Bus_I2C-matemat J4
 U 1 1 50F5F5BF
 P 3650 7150
 AR Path="/50F5F5BF" Ref="J4"  Part="1" 
@@ -61,7 +60,7 @@ F 3 "" H 3650 7150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:4094D IC1
+L matemat_power-rescue:4094D-matemat_power-rescue IC1
 U 1 1 50F5F7F4
 P 2600 5550
 F 0 "IC1" H 2200 6175 50  0000 L BNN
@@ -76,7 +75,7 @@ clk
 Text Label 1650 6200 0    60   ~ 0
 strobe
 $Comp
-L matemat_power-rescue:R JMP1
+L matemat_power-rescue:R-matemat_power-rescue JMP1
 U 1 1 50F5F6F8
 P 2550 7500
 F 0 "JMP1" V 2600 7750 50  0000 C CNN
@@ -87,7 +86,7 @@ F 3 "" H 2550 7500 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L matemat_power-rescue:+5V #PWR9
+L matemat_power-rescue:+5V-matemat_power-rescue #PWR9
 U 1 1 50F5FA42
 P 2400 6250
 F 0 "#PWR9" H 2400 6340 20  0001 C CNN
@@ -98,7 +97,7 @@ F 3 "" H 2400 6250 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L matemat_power-rescue:R JMP2
+L matemat_power-rescue:R-matemat_power-rescue JMP2
 U 1 1 50F5FB5C
 P 2550 7650
 F 0 "JMP2" V 2600 7900 50  0000 C CNN
@@ -181,7 +180,7 @@ F1 "triac_channel_8.sch" 60
 F2 "In" I L 3550 4550 60 
 $EndSheet
 $Comp
-L matemat_power-rescue:+5V #PWR5
+L matemat_power-rescue:+5V-matemat_power-rescue #PWR5
 U 1 1 50FF3F43
 P 1450 4950
 F 0 "#PWR5" H 1450 5040 20  0001 C CNN
@@ -192,7 +191,7 @@ F 3 "" H 1450 4950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:4094D IC1
+L matemat_power-rescue:4094D-matemat_power-rescue IC1
 U 2 1 5105769F
 P 1450 5350
 F 0 "IC1" H 1250 5550 50  0000 L BNN
@@ -203,7 +202,7 @@ F 3 "" H 1450 5350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:C C3
+L matemat_power-rescue:C-matemat_power-rescue C3
 U 1 1 510583BD
 P 1000 5300
 F 0 "C3" H 1050 5400 50  0000 L CNN
@@ -214,7 +213,7 @@ F 3 "" H 1000 5300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:GND #PWR6
+L matemat_power-rescue:GND-matemat_power-rescue #PWR6
 U 1 1 5105853A
 P 1450 5750
 F 0 "#PWR6" H 1450 5750 30  0001 C CNN
@@ -225,7 +224,7 @@ F 3 "" H 1450 5750 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:4094D IC2
+L matemat_power-rescue:4094D-matemat_power-rescue IC2
 U 1 1 510836A5
 P 6800 6350
 F 0 "IC2" H 6400 6975 50  0000 L BNN
@@ -236,7 +235,7 @@ F 3 "" H 6800 6350 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L matemat_power-rescue:ULN2803A IC3
+L matemat_power-rescue:ULN2803A-matemat_power-rescue IC3
 U 1 1 51086ED4
 P 8350 5150
 F 0 "IC3" H 8050 5680 50  0000 L BNN
@@ -247,7 +246,7 @@ F 3 "" H 8350 5150 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:+5V #PWR13
+L matemat_power-rescue:+5V-matemat_power-rescue #PWR13
 U 1 1 510872E7
 P 5800 6000
 F 0 "#PWR13" H 5800 6090 20  0001 C CNN
@@ -258,7 +257,7 @@ F 3 "" H 5800 6000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:4094D IC2
+L matemat_power-rescue:4094D-matemat_power-rescue IC2
 U 2 1 510872ED
 P 5800 6400
 F 0 "IC2" H 5600 6600 50  0000 L BNN
@@ -269,7 +268,7 @@ F 3 "" H 5800 6400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:C C4
+L matemat_power-rescue:C-matemat_power-rescue C4
 U 1 1 510872F3
 P 5350 6350
 F 0 "C4" H 5400 6450 50  0000 L CNN
@@ -280,7 +279,7 @@ F 3 "" H 5350 6350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:GND #PWR14
+L matemat_power-rescue:GND-matemat_power-rescue #PWR14
 U 1 1 51087300
 P 5800 6800
 F 0 "#PWR14" H 5800 6800 30  0001 C CNN
@@ -295,7 +294,7 @@ clk
 Text Label 5850 7000 0    60   ~ 0
 strobe
 $Comp
-L matemat_power-rescue:+5V #PWR16
+L matemat_power-rescue:+5V-matemat_power-rescue #PWR16
 U 1 1 51088412
 P 6600 7050
 F 0 "#PWR16" H 6600 7140 20  0001 C CNN
@@ -310,7 +309,7 @@ Din
 Text Label 7200 5700 0    60   ~ 0
 Dout1_Din2
 $Comp
-L matemat_power-rescue:GND #PWR17
+L matemat_power-rescue:GND-matemat_power-rescue #PWR17
 U 1 1 510888ED
 P 7850 5800
 F 0 "#PWR17" H 7850 5800 30  0001 C CNN
@@ -321,7 +320,7 @@ F 3 "" H 7850 5800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:CONN_8 J11
+L matemat_power-rescue:CONN_8-matemat_power-rescue J11
 U 1 1 5108C0AA
 P 9600 5100
 F 0 "J11" V 9550 5100 60  0000 C CNN
@@ -332,7 +331,7 @@ F 3 "" H 9600 5100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:+12V #PWR20
+L matemat_power-rescue:+12V-matemat_power-rescue #PWR20
 U 1 1 5108D085
 P 9100 5800
 F 0 "#PWR20" H 9100 5750 20  0001 C CNN
@@ -343,7 +342,7 @@ F 3 "" H 9100 5800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R R1
+L matemat_power-rescue:R-matemat_power-rescue R1
 U 1 1 5108F808
 P 2250 7000
 F 0 "R1" V 2300 7250 50  0000 C CNN
@@ -354,7 +353,7 @@ F 3 "" H 2250 7000 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L matemat_power-rescue:R R2
+L matemat_power-rescue:R-matemat_power-rescue R2
 U 1 1 5108FCDB
 P 2250 7100
 F 0 "R2" V 2300 7350 50  0000 C CNN
@@ -365,7 +364,7 @@ F 3 "" H 2250 7100 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L matemat_power-rescue:+5V #PWR7
+L matemat_power-rescue:+5V-matemat_power-rescue #PWR7
 U 1 1 5108FE16
 P 1750 7000
 F 0 "#PWR7" H 1750 7090 20  0001 C CNN
@@ -376,7 +375,7 @@ F 3 "" H 1750 7000 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L matemat_power-rescue:+5V #PWR8
+L matemat_power-rescue:+5V-matemat_power-rescue #PWR8
 U 1 1 5108FE1C
 P 1750 7100
 F 0 "#PWR8" H 1750 7190 20  0001 C CNN
@@ -387,7 +386,7 @@ F 3 "" H 1750 7100 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L matemat_power-rescue:R R5
+L matemat_power-rescue:R-matemat_power-rescue R5
 U 1 1 51093461
 P 8150 3350
 F 0 "R5" V 8050 3350 50  0000 C CNN
@@ -398,7 +397,7 @@ F 3 "" H 8150 3350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:HT #PWR15
+L matemat_power-rescue:HT-matemat_power-rescue #PWR15
 U 1 1 51093496
 P 6250 2300
 F 0 "#PWR15" H 6250 2420 20  0001 C CNN
@@ -409,7 +408,7 @@ F 3 "" H 6250 2300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:PC817 IC4
+L matemat_power-rescue:PC817-matemat_power-rescue IC4
 U 1 1 510964E4
 P 8500 2950
 F 0 "IC4" H 8287 3128 40  0000 C CNN
@@ -420,7 +419,7 @@ F 3 "" H 8500 2950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R R6
+L matemat_power-rescue:R-matemat_power-rescue R6
 U 1 1 51096DB7
 P 8850 2350
 F 0 "R6" V 8900 2600 50  0000 C CNN
@@ -431,7 +430,7 @@ F 3 "" H 8850 2350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:DIODE D6
+L matemat_power-rescue:DIODE-matemat_power-rescue D6
 U 1 1 51097ED5
 P 6750 2600
 F 0 "D6" H 6750 2700 40  0000 C CNN
@@ -444,7 +443,7 @@ F 5 "0.872" H 6750 2600 60  0001 C CNN "prix"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L matemat_power-rescue:DIODE D9
+L matemat_power-rescue:DIODE-matemat_power-rescue D9
 U 1 1 51097EDD
 P 6750 3200
 F 0 "D9" H 6750 3300 40  0000 C CNN
@@ -457,7 +456,7 @@ F 5 "0.872" H 6750 3200 60  0001 C CNN "prix"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L matemat_power-rescue:DIODE D10
+L matemat_power-rescue:DIODE-matemat_power-rescue D10
 U 1 1 51097EE5
 P 7250 2600
 F 0 "D10" H 7250 2700 40  0000 C CNN
@@ -470,7 +469,7 @@ F 5 "0.872" H 7250 2600 60  0001 C CNN "prix"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L matemat_power-rescue:DIODE D11
+L matemat_power-rescue:DIODE-matemat_power-rescue D11
 U 1 1 51097EED
 P 7250 3200
 F 0 "D11" H 7250 3300 40  0000 C CNN
@@ -483,7 +482,7 @@ F 5 "0.872" H 7250 3200 60  0001 C CNN "prix"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L matemat_power-rescue:NPN_BCE Q1
+L matemat_power-rescue:NPN_BCE-matemat_power-rescue Q1
 U 1 1 510F03EF
 P 8050 2550
 F 0 "Q1" H 8050 2400 50  0000 R CNN
@@ -494,7 +493,7 @@ F 3 "" H 8050 2550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R R4
+L matemat_power-rescue:R-matemat_power-rescue R4
 U 1 1 510F0716
 P 7650 2250
 F 0 "R4" V 7550 2250 50  0000 C CNN
@@ -505,7 +504,7 @@ F 3 "" H 7650 2250 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R R3
+L matemat_power-rescue:R-matemat_power-rescue R3
 U 1 1 510F0739
 P 7650 1700
 F 0 "R3" V 7550 1700 50  0000 C CNN
@@ -516,7 +515,7 @@ F 3 "" H 7650 1700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:BZX84CSMD D12
+L matemat_power-rescue:BZX84CSMD-matemat_power-rescue D12
 U 1 1 510F226A
 P 7650 3450
 F 0 "D12" H 7580 3525 50  0000 L BNN
@@ -761,7 +760,7 @@ Wire Wire Line
 	8850 2700 9200 2700
 Connection ~ 8850 2700
 $Comp
-L matemat_power-rescue:+5V #PWR19
+L matemat_power-rescue:+5V-matemat_power-rescue #PWR19
 U 1 1 510F3CB2
 P 9050 2000
 F 0 "#PWR19" H 9050 2090 20  0001 C CNN
@@ -772,7 +771,7 @@ F 3 "" H 9050 2000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:GND #PWR18
+L matemat_power-rescue:GND-matemat_power-rescue #PWR18
 U 1 1 510F3E20
 P 8850 3600
 F 0 "#PWR18" H 8850 3600 30  0001 C CNN

@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:matemat_power-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L matemat_power-rescue:MOC3022M U301
+L matemat_power-rescue:MOC3022M-matemat_power-rescue U301
 U 1 1 50FB1912
 P 4200 4550
 F 0 "U301" H 3986 4729 40  0000 C CNN
@@ -26,7 +25,7 @@ F 3 "" H 4200 4550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R R301
+L matemat_power-rescue:R-matemat_power-rescue R301
 U 1 1 50FB1948
 P 3850 4100
 F 0 "R301" V 3950 4100 50  0000 C CNN
@@ -37,7 +36,7 @@ F 3 "" H 3850 4100 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L matemat_power-rescue:R R303
+L matemat_power-rescue:R-matemat_power-rescue R303
 U 1 1 50FB1B13
 P 5600 3850
 F 0 "R303" V 5500 3850 50  0000 C CNN
@@ -48,7 +47,7 @@ F 3 "" H 5600 3850 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L matemat_power-rescue:R R304
+L matemat_power-rescue:R-matemat_power-rescue R304
 U 1 1 50FB1B1E
 P 6450 4200
 F 0 "R304" V 6350 4200 50  0000 C CNN
@@ -59,7 +58,7 @@ F 3 "" H 6450 4200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R R305
+L matemat_power-rescue:R-matemat_power-rescue R305
 U 1 1 50FB1B29
 P 5600 4950
 F 0 "R305" V 5500 4950 50  0000 C CNN
@@ -70,7 +69,7 @@ F 3 "" H 5600 4950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:C C301
+L matemat_power-rescue:C-matemat_power-rescue C301
 U 1 1 50FB1C81
 P 5250 4200
 F 0 "C301" H 4950 4300 50  0000 L CNN
@@ -81,7 +80,7 @@ F 3 "" H 5250 4200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R R302
+L matemat_power-rescue:R-matemat_power-rescue R302
 U 1 1 50FB1CF2
 P 4950 4650
 F 0 "R302" V 4850 4650 50  0000 C CNN
@@ -92,7 +91,7 @@ F 3 "" H 4950 4650 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L matemat_power-rescue:TRIAC_IEC T301
+L matemat_power-rescue:TRIAC_IEC-matemat_power-rescue T301
 U 1 1 50FB18FA
 P 5950 4550
 F 0 "T301" V 5900 4750 40  0000 C CNN
@@ -103,7 +102,7 @@ F 3 "" H 5950 4550 60  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L matemat_power-rescue:GNDPWR #PWR01
+L matemat_power-rescue:GNDPWR-matemat_power-rescue #PWR01
 U 1 1 50FB1E40
 P 5250 4450
 F 0 "#PWR01" H 5250 4500 40  0001 C CNN
@@ -116,7 +115,7 @@ $EndComp
 Wire Wire Line
 	5250 4450 5250 4400
 $Comp
-L matemat_power-rescue:GNDPWR #PWR02
+L matemat_power-rescue:GNDPWR-matemat_power-rescue #PWR02
 U 1 1 50FB1EFA
 P 5950 5250
 F 0 "#PWR02" H 5950 5300 40  0001 C CNN
@@ -129,7 +128,7 @@ $EndComp
 Wire Wire Line
 	5950 5250 5950 4750
 $Comp
-L matemat_power-rescue:GNDPWR #PWR03
+L matemat_power-rescue:GNDPWR-matemat_power-rescue #PWR03
 U 1 1 50FB1F9D
 P 5600 5250
 F 0 "#PWR03" H 5600 5300 40  0001 C CNN
@@ -142,7 +141,7 @@ $EndComp
 Wire Wire Line
 	5600 5250 5600 5200
 $Comp
-L matemat_power-rescue:GNDPWR #PWR04
+L matemat_power-rescue:GNDPWR-matemat_power-rescue #PWR04
 U 1 1 50FB1FD5
 P 6450 5250
 F 0 "#PWR04" H 6450 5300 40  0001 C CNN
@@ -155,7 +154,7 @@ $EndComp
 Wire Wire Line
 	6450 4950 6450 5250
 $Comp
-L matemat_power-rescue:C C302
+L matemat_power-rescue:C-matemat_power-rescue C302
 U 1 1 50FB21D6
 P 6450 4750
 F 0 "C302" H 6150 4850 50  0000 L CNN
@@ -166,7 +165,7 @@ F 3 "" H 6450 4750 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:CONN_2 J301
+L matemat_power-rescue:CONN_2-matemat_power-rescue J301
 U 1 1 50FB21F2
 P 6300 3350
 F 0 "J301" H 6500 3450 50  0000 C CNN
@@ -179,7 +178,7 @@ F 5 "0,84" H 6300 3350 60  0001 C CNN "prix"
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:HT #PWR05
+L matemat_power-rescue:HT-matemat_power-rescue #PWR05
 U 1 1 50FB22BF
 P 5950 2950
 F 0 "#PWR05" H 5950 3070 20  0001 C CNN
@@ -215,7 +214,7 @@ In
 Wire Wire Line
 	3850 4850 3850 4650
 $Comp
-L matemat_power-rescue:GND #PWR06
+L matemat_power-rescue:GND-matemat_power-rescue #PWR06
 U 1 1 50FB2A82
 P 3850 4850
 F 0 "#PWR06" H 3850 4850 30  0001 C CNN
@@ -226,7 +225,7 @@ F 3 "" H 3850 4850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:C C303
+L matemat_power-rescue:C-matemat_power-rescue C303
 U 1 1 50FB266D
 P 6900 4750
 F 0 "C303" H 6600 4850 50  0000 L CNN
