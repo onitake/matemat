@@ -1,13 +1,12 @@
 EESchema Schematic File Version 4
-LIBS:poweriface-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Matemat Power Board CAN Interface"
-Date "2019-04-05"
-Rev "1"
+Date "2020-02-12"
+Rev "2"
 Comp "CCC Basel"
 Comment1 ""
 Comment2 ""
@@ -70,28 +69,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8209-8-bit%20AVR%20AT
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5CA53A5C
-P 8400 4400
-F 0 "J2" H 8479 4392 50  0000 L CNN
-F 1 "CAN In" H 8479 4301 50  0000 L CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 8400 4400 50  0001 C CNN
-F 3 "~" H 8400 4400 50  0001 C CNN
-	1    8400 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5CA53AD4
-P 8400 4800
-F 0 "J3" H 8479 4792 50  0000 L CNN
-F 1 "CAN Out" H 8479 4701 50  0000 L CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-2_1x02_P2.54mm_Horizontal" H 8400 4800 50  0001 C CNN
-F 3 "~" H 8400 4800 50  0001 C CNN
-	1    8400 4800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:Crystal Y1
 U 1 1 5CA53BA3
 P 4800 5450
@@ -124,14 +101,10 @@ F 3 "~" H 5250 5700 50  0001 C CNN
 	1    5250 5700
 	0    1    1    0   
 $EndComp
+Text Label 8200 4600 2    50   ~ 0
+CAN_N
 Text Label 8200 4500 2    50   ~ 0
-CAN_N
-Text Label 8200 4400 2    50   ~ 0
 CAN_P
-Text Label 8200 4800 2    50   ~ 0
-CAN_P
-Text Label 8200 4900 2    50   ~ 0
-CAN_N
 Text Label 7350 4700 0    50   ~ 0
 CAN_N
 Text Label 7350 4500 0    50   ~ 0
@@ -285,17 +258,6 @@ Text Label 6350 4500 2    50   ~ 0
 RXCAN
 Text Label 6350 4400 2    50   ~ 0
 TXCAN
-$Comp
-L Device:CP C3
-U 1 1 5CA54AD7
-P 6800 5650
-F 0 "C3" H 6918 5696 50  0000 L CNN
-F 1 "10u" H 6918 5605 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6838 5500 50  0001 C CNN
-F 3 "~" H 6800 5650 50  0001 C CNN
-	1    6800 5650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7200 5500 6800 5500
 Wire Wire Line
@@ -475,7 +437,7 @@ L Device:R R7
 U 1 1 5CA5C44B
 P 6200 4950
 F 0 "R7" V 6407 4950 50  0000 C CNN
-F 1 "0" V 6316 4950 50  0000 C CNN
+F 1 "DNP" V 6316 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6130 4950 50  0001 C CNN
 F 3 "~" H 6200 4950 50  0001 C CNN
 	1    6200 4950
@@ -488,4 +450,71 @@ Text Label 6050 4950 2    50   ~ 0
 HISPEED
 Text Label 4550 4900 0    50   ~ 0
 HISPEED
+$Comp
+L Device:C C3
+U 1 1 5E445A5C
+P 6800 5650
+F 0 "C3" H 6915 5696 50  0000 L CNN
+F 1 "10u" H 6915 5605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6838 5500 50  0001 C CNN
+F 3 "~" H 6800 5650 50  0001 C CNN
+	1    6800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5CA53A5C
+P 8400 4400
+F 0 "J2" H 8479 4392 50  0000 L CNN
+F 1 "CAN" H 8479 4301 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-4_1x04_P2.54mm_Horizontal" H 8400 4400 50  0001 C CNN
+F 3 "~" H 8400 4400 50  0001 C CNN
+	1    8400 4400
+	1    0    0    -1  
+$EndComp
+Text Label 8200 4300 2    50   ~ 0
+CAN_N
+Text Label 8200 4400 2    50   ~ 0
+CAN_P
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5F01B6DF
+P 9200 4400
+F 0 "J3" H 9280 4392 50  0000 L CNN
+F 1 "CAN_SHIELD" H 9280 4301 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-6_1x06_P2.54mm_Horizontal" H 9200 4400 50  0001 C CNN
+F 3 "~" H 9200 4400 50  0001 C CNN
+	1    9200 4400
+	1    0    0    -1  
+$EndComp
+Text Label 9000 4600 2    50   ~ 0
+CAN_N
+Text Label 9000 4500 2    50   ~ 0
+CAN_P
+Text Label 9000 4300 2    50   ~ 0
+CAN_N
+Text Label 9000 4400 2    50   ~ 0
+CAN_P
+$Comp
+L power:GND #PWR0101
+U 1 1 5F01D002
+P 9000 4700
+F 0 "#PWR0101" H 9000 4450 50  0001 C CNN
+F 1 "GND" H 9005 4527 50  0000 C CNN
+F 2 "" H 9000 4700 50  0001 C CNN
+F 3 "" H 9000 4700 50  0001 C CNN
+	1    9000 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F01D90A
+P 9000 4200
+F 0 "#PWR0102" H 9000 3950 50  0001 C CNN
+F 1 "GND" H 9005 4027 50  0000 C CNN
+F 2 "" H 9000 4200 50  0001 C CNN
+F 3 "" H 9000 4200 50  0001 C CNN
+	1    9000 4200
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
