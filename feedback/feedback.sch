@@ -284,17 +284,6 @@ Connection ~ 3550 4950
 Wire Wire Line
 	3550 4950 3850 4950
 $Comp
-L Connector_Generic:Conn_01x06 J4
-U 1 1 5F42D3E5
-P 10150 2300
-F 0 "J4" H 10230 2292 50  0000 L CNN
-F 1 "CAN" H 10230 2201 50  0000 L CNN
-F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-6_1x06_P2.54mm_Horizontal" H 10150 2300 50  0001 C CNN
-F 3 "~" H 10150 2300 50  0001 C CNN
-	1    10150 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C7
 U 1 1 5F42DAA6
 P 4600 6750
@@ -624,56 +613,56 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5F4AAF51
-P 5300 5700
-F 0 "H1" H 5400 5746 50  0000 L CNN
-F 1 "NW" H 5400 5655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5300 5700 50  0001 C CNN
-F 3 "~" H 5300 5700 50  0001 C CNN
-	1    5300 5700
+P 5550 6750
+F 0 "H1" H 5650 6796 50  0000 L CNN
+F 1 "NW" H 5650 6705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5550 6750 50  0001 C CNN
+F 3 "~" H 5550 6750 50  0001 C CNN
+	1    5550 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5F4AB624
-P 5650 5700
-F 0 "H3" H 5750 5746 50  0000 L CNN
-F 1 "NE" H 5750 5655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5650 5700 50  0001 C CNN
-F 3 "~" H 5650 5700 50  0001 C CNN
-	1    5650 5700
+P 5900 6750
+F 0 "H3" H 6000 6796 50  0000 L CNN
+F 1 "NE" H 6000 6705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5900 6750 50  0001 C CNN
+F 3 "~" H 5900 6750 50  0001 C CNN
+	1    5900 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 5F4AB8DD
-P 5300 5900
-F 0 "H2" H 5400 5946 50  0000 L CNN
-F 1 "SW" H 5400 5855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5300 5900 50  0001 C CNN
-F 3 "~" H 5300 5900 50  0001 C CNN
-	1    5300 5900
+P 5550 6950
+F 0 "H2" H 5650 6996 50  0000 L CNN
+F 1 "SW" H 5650 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5550 6950 50  0001 C CNN
+F 3 "~" H 5550 6950 50  0001 C CNN
+	1    5550 6950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole H4
 U 1 1 5F4ABDBC
-P 5650 5900
-F 0 "H4" H 5750 5946 50  0000 L CNN
-F 1 "SE" H 5750 5855 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5650 5900 50  0001 C CNN
-F 3 "~" H 5650 5900 50  0001 C CNN
-	1    5650 5900
+P 5900 6950
+F 0 "H4" H 6000 6996 50  0000 L CNN
+F 1 "SE" H 6000 6905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5900 6950 50  0001 C CNN
+F 3 "~" H 5900 6950 50  0001 C CNN
+	1    5900 6950
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO1
+L Graphic:Logo_Open_Hardware_Small OHW1
 U 1 1 5F4AC80D
-P 6200 5800
-F 0 "#LOGO1" H 6200 6075 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Small" H 6200 5575 50  0001 C CNN
-F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 6200 5800 50  0001 C CNN
-F 3 "~" H 6200 5800 50  0001 C CNN
-	1    6200 5800
+P 6450 6850
+F 0 "OHW1" H 6450 7125 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 6450 6625 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 6450 6850 50  0001 C CNN
+F 3 "~" H 6450 6850 50  0001 C CNN
+	1    6450 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -753,4 +742,72 @@ Wire Wire Line
 Connection ~ 4900 2850
 Wire Wire Line
 	4900 2850 5250 2850
+$Comp
+L Connector_Generic:Conn_01x12 J5
+U 1 1 5F526155
+P 6750 4750
+F 0 "J5" H 6830 4742 50  0000 L CNN
+F 1 "USW" H 6830 4651 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_1-282834-2_1x12_P2.54mm_Horizontal" H 6750 4750 50  0001 C CNN
+F 3 "~" H 6750 4750 50  0001 C CNN
+	1    6750 4750
+	1    0    0    -1  
+$EndComp
+Text Label 6550 4750 2    50   ~ 0
+SW_COMMON
+Text Label 6550 5250 2    50   ~ 0
+SW_RESET
+Text Label 6550 4250 2    50   ~ 0
+D_END
+Text Label 6550 4450 2    50   ~ 0
+E_END
+Text Label 6550 4650 2    50   ~ 0
+H_END
+Text Label 6550 4950 2    50   ~ 0
+G_END
+Text Label 6550 5150 2    50   ~ 0
+F_END
+Text Label 6550 4350 2    50   ~ 0
+H_EMPTY
+Text Label 6550 4550 2    50   ~ 0
+G_EMPTY
+Text Label 6550 4850 2    50   ~ 0
+F_EMPTY
+Text Label 6550 5050 2    50   ~ 0
+E_EMPTY
+Text Label 6550 5350 2    50   ~ 0
+D_EMPTY
+$Comp
+L Connector_Generic:Conn_01x08 J4
+U 1 1 5F52B034
+P 10150 2400
+F 0 "J4" H 10230 2392 50  0000 L CNN
+F 1 "Conn_01x08" H 10230 2301 50  0000 L CNN
+F 2 "TerminalBlock_TE-Connectivity:TerminalBlock_TE_282834-8_1x08_P2.54mm_Horizontal" H 10150 2400 50  0001 C CNN
+F 3 "~" H 10150 2400 50  0001 C CNN
+	1    10150 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F52C53A
+P 9950 2700
+F 0 "#PWR0103" H 9950 2450 50  0001 C CNN
+F 1 "GND" V 9955 2572 50  0000 R CNN
+F 2 "" H 9950 2700 50  0001 C CNN
+F 3 "" H 9950 2700 50  0001 C CNN
+	1    9950 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0104
+U 1 1 5F52CA60
+P 9950 2800
+F 0 "#PWR0104" H 9950 2650 50  0001 C CNN
+F 1 "+12V" H 9965 2973 50  0000 C CNN
+F 2 "" H 9950 2800 50  0001 C CNN
+F 3 "" H 9950 2800 50  0001 C CNN
+	1    9950 2800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
