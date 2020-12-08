@@ -77,8 +77,6 @@ F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 4650 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 4700 3000 4700
-Wire Wire Line
 	4100 4700 4350 4700
 $Comp
 L Device:C C3
@@ -133,12 +131,12 @@ Connection ~ 5050 4700
 $Comp
 L power:LINE #PWR08
 U 1 1 5F43C5FC
-P 3000 4700
-F 0 "#PWR08" H 3000 4550 50  0001 C CNN
-F 1 "LINE" H 3015 4873 50  0000 C CNN
-F 2 "" H 3000 4700 50  0001 C CNN
-F 3 "" H 3000 4700 50  0001 C CNN
-	1    3000 4700
+P 2800 4700
+F 0 "#PWR08" H 2800 4550 50  0001 C CNN
+F 1 "LINE" H 2815 4873 50  0000 C CNN
+F 2 "" H 2800 4700 50  0001 C CNN
+F 3 "" H 2800 4700 50  0001 C CNN
+	1    2800 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -443,9 +441,6 @@ F 3 "" H 2050 3350 50  0001 C CNN
 	1    2050 3350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3200 4700 3000 4700
-Connection ~ 3000 4700
 $Comp
 L Connector:AVR-ISP-6 J1
 U 1 1 5F47B180
@@ -587,12 +582,12 @@ ZERO
 $Comp
 L power:NEUT #PWR09
 U 1 1 5F43CFFA
-P 3000 5300
-F 0 "#PWR09" H 3000 5150 50  0001 C CNN
-F 1 "NEUT" H 3015 5473 50  0000 C CNN
-F 2 "" H 3000 5300 50  0001 C CNN
-F 3 "" H 3000 5300 50  0001 C CNN
-	1    3000 5300
+P 2800 5300
+F 0 "#PWR09" H 2800 5150 50  0001 C CNN
+F 1 "NEUT" H 2815 5473 50  0000 C CNN
+F 2 "" H 2800 5300 50  0001 C CNN
+F 3 "" H 2800 5300 50  0001 C CNN
+	1    2800 5300
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -815,110 +810,8 @@ F 3 "" H 1200 5250 50  0001 C CNN
 	1    1200 5250
 	-1   0    0    1   
 $EndComp
-Text Label 2150 4950 0    50   ~ 0
-ZERO
 Text Label 8300 4850 0    50   ~ 0
 TRIGGER
-$Comp
-L Connector_Generic:Conn_01x01 J3
-U 1 1 5F92A3C9
-P 2250 1650
-F 0 "J3" H 2330 1692 50  0000 L CNN
-F 1 "MOTOR1" H 2330 1601 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.1mm_L10.2mm_W3.5mm_Flat" H 2250 1650 50  0001 C CNN
-F 3 "~" H 2250 1650 50  0001 C CNN
-	1    2250 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J4
-U 1 1 5F92A98D
-P 2250 1800
-F 0 "J4" H 2330 1842 50  0000 L CNN
-F 1 "MOTOR2" H 2330 1751 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.1mm_L10.2mm_W3.5mm_Flat" H 2250 1800 50  0001 C CNN
-F 3 "~" H 2250 1800 50  0001 C CNN
-	1    2250 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J5
-U 1 1 5F92ACB1
-P 2250 1950
-F 0 "J5" H 2330 1992 50  0000 L CNN
-F 1 "EMPTY1" H 2330 1901 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.1mm_L10.2mm_W3.5mm_Flat" H 2250 1950 50  0001 C CNN
-F 3 "~" H 2250 1950 50  0001 C CNN
-	1    2250 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J8
-U 1 1 5F92BDC9
-P 2250 2400
-F 0 "J8" H 2330 2442 50  0000 L CNN
-F 1 "STOP2" H 2330 2351 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.1mm_L10.2mm_W3.5mm_Flat" H 2250 2400 50  0001 C CNN
-F 3 "~" H 2250 2400 50  0001 C CNN
-	1    2250 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J7
-U 1 1 5F946B1D
-P 2250 2250
-F 0 "J7" H 2330 2292 50  0000 L CNN
-F 1 "EMPTY2" H 2330 2201 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.1mm_L10.2mm_W3.5mm_Flat" H 2250 2250 50  0001 C CNN
-F 3 "~" H 2250 2250 50  0001 C CNN
-	1    2250 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J6
-U 1 1 5F946D85
-P 2250 2100
-F 0 "J6" H 2330 2142 50  0000 L CNN
-F 1 "STOP1" H 2330 2051 50  0000 L CNN
-F 2 "Connector_Pin:Pin_D1.1mm_L10.2mm_W3.5mm_Flat" H 2250 2100 50  0001 C CNN
-F 3 "~" H 2250 2100 50  0001 C CNN
-	1    2250 2100
-	1    0    0    -1  
-$EndComp
-Text Label 2050 1650 2    50   ~ 0
-MOTOR1
-Text Label 2050 1800 2    50   ~ 0
-MOTOR2
-Text Label 2050 1950 2    50   ~ 0
-EMPTY1
-Text Label 2050 2100 2    50   ~ 0
-STOP1
-Text Label 2050 2250 2    50   ~ 0
-EMPTY2
-Text Label 2050 2400 2    50   ~ 0
-STOP2
-$Comp
-L Connector_Generic:Conn_01x01 J9
-U 1 1 5F95D62C
-P 2600 4700
-F 0 "J9" H 2518 4475 50  0000 C CNN
-F 1 "28VAC" H 2518 4566 50  0000 C CNN
-F 2 "Connector_Pin:Pin_D1.1mm_L10.2mm_W3.5mm_Flat" H 2600 4700 50  0001 C CNN
-F 3 "~" H 2600 4700 50  0001 C CNN
-	1    2600 4700
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x01 J10
-U 1 1 5F95DC76
-P 2600 5300
-F 0 "J10" H 2518 5075 50  0000 C CNN
-F 1 "28VAC" H 2518 5166 50  0000 C CNN
-F 2 "Connector_Pin:Pin_D1.1mm_L10.2mm_W3.5mm_Flat" H 2600 5300 50  0001 C CNN
-F 3 "~" H 2600 5300 50  0001 C CNN
-	1    2600 5300
-	-1   0    0    1   
-$EndComp
 $Comp
 L Diode:BAS40-04 D1
 U 1 1 5F96F94B
@@ -930,12 +823,7 @@ F 3 "http://www.vishay.com/docs/85701/bas40v.pdf" H 1830 5050 50  0001 C CNN
 	1    1950 4950
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2050 4950 1200 4950
 Connection ~ 1200 4950
-Wire Wire Line
-	2150 4950 2050 4950
-Connection ~ 2050 4950
 $Comp
 L Diode:BAS40-04 D2
 U 1 1 5F9864BB
@@ -994,10 +882,69 @@ Wire Wire Line
 Connection ~ 2900 5100
 Connection ~ 4100 5300
 Wire Wire Line
-	2800 5300 3000 5300
-Connection ~ 3000 5300
-Wire Wire Line
-	3000 5300 3650 5300
-Wire Wire Line
 	2900 5100 2900 5500
+$Comp
+L Connector_Generic:Conn_02x04_Top_Bottom J11
+U 1 1 5FD23FC4
+P 1900 2050
+F 0 "J11" H 1950 2367 50  0000 C CNN
+F 1 "Power" H 1950 2276 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Mini-Fit_Jr_5569-08A2_2x04_P4.20mm_Horizontal" H 1900 2050 50  0001 C CNN
+F 3 "~" H 1900 2050 50  0001 C CNN
+	1    1900 2050
+	1    0    0    -1  
+$EndComp
+Text Label 1700 1950 2    50   ~ 0
+MOTOR1
+Text Label 2200 1950 0    50   ~ 0
+MOTOR2
+Text Label 2200 2150 0    50   ~ 0
+EMPTY1
+Text Label 2200 2250 0    50   ~ 0
+STOP1
+Text Label 1700 2150 2    50   ~ 0
+EMPTY2
+Text Label 1700 2250 2    50   ~ 0
+STOP2
+Wire Wire Line
+	1600 2050 1700 2050
+$Comp
+L power:LINE #PWR0108
+U 1 1 5FD2758F
+P 1600 1850
+F 0 "#PWR0108" H 1600 1700 50  0001 C CNN
+F 1 "LINE" H 1615 2023 50  0000 C CNN
+F 2 "" H 1600 1850 50  0001 C CNN
+F 3 "" H 1600 1850 50  0001 C CNN
+	1    1600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1850 1600 2050
+Wire Wire Line
+	2300 2050 2200 2050
+$Comp
+L power:NEUT #PWR0109
+U 1 1 5FD278FC
+P 2300 2300
+F 0 "#PWR0109" H 2300 2150 50  0001 C CNN
+F 1 "NEUT" H 2315 2473 50  0000 C CNN
+F 2 "" H 2300 2300 50  0001 C CNN
+F 3 "" H 2300 2300 50  0001 C CNN
+	1    2300 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2300 2300 2300 2050
+Text Label 2150 4950 0    50   ~ 0
+ZERO
+Wire Wire Line
+	2150 4950 2050 4950
+Wire Wire Line
+	2050 4950 1200 4950
+Connection ~ 2050 4950
+Wire Wire Line
+	2800 5300 3650 5300
+Wire Wire Line
+	2800 4700 3200 4700
 $EndSCHEMATC
