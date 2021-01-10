@@ -8,3 +8,12 @@ sym-lib-table
 *-backup
 plot
 fp-info-cache
+
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.lst
+*.map
+*.srec
