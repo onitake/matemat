@@ -1,0 +1,4 @@
+[submodule "avr-can-lib"]
+	path = avr-can-lib
+	url = https://github.com/onitake/avr-can-lib
+	branch = atmega32m1
