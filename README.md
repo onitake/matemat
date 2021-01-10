@@ -26,6 +26,21 @@ on its GPIO header.
 See (CAN Hat)[https://github.com/onitake/canhat] for
 more information.
 
+## Firmware
+
+Some of the modules require firmware. There is a makefile in
+each module to build and flash it to its microcontroller.
+
+Before building, you need to check out the CAN driver
+source code, which is referenced as a Git submodule.
+
+Run the following commands in the checked out repository:
+
+```shell
+git submodule init
+git submodule update
+```
+
 ## Modules
 
 The Matemat components are highly modular. Individual
@@ -61,6 +76,21 @@ messages on changes.
 ### poweriface
 
 Interface between CAN bus and power board.
+
+This module requires firmware. Switch into the firmware
+directory `poweriface/firmware/` and run
+
+```shell
+make
+```
+
+To flash the firmware, attach a programmer to the ISP
+header on the PCB, then run:
+
+
+```shell
+make flash
+```
 
 ### sensor
 
