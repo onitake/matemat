@@ -72,7 +72,7 @@ P 4650 4700
 F 0 "U1" H 4650 4942 50  0000 C CNN
 F 1 "LM317LI" H 4650 4851 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4650 4900 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 4650 4500 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lm317l.pdf" H 4650 4500 50  0001 C CNN
 	1    4650 4700
 	1    0    0    -1  
 $EndComp
