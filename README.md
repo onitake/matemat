@@ -23,7 +23,7 @@ The heart of the vending machine is a Raspberry Pi
 model 3 or later, witch a custom CAN interface board
 on its GPIO header.
 
-See (CAN Hat)[https://github.com/onitake/canhat] for
+See [CAN Hat](https://github.com/onitake/canhat) for
 more information.
 
 ## Firmware
