@@ -6,7 +6,7 @@ It is based on an old vending machine with all its
 electronics replaced by new custom-build circuit boards.
 
 All hardware and software was designed by members of
-(CCC Basel)[http://www.ccc-basel.ch] and released in the
+[CCC Basel](http://www.ccc-basel.ch) and released in the
 form of circuit diagrams, printed circuit board layouts
 and source code for anyone to use and modify. Refer to
 the LICENSE file for details.
