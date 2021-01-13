@@ -133,5 +133,5 @@ This is the list of supported message IDs:
 | 0x1000     | controller | poweriface | 1           | 0b00000MMM              | Start dispensing from slot M (0-5) |
 | 0x100      | any        | poweriface | 0           |                         | Send power board status report |
 | 0x100      | any        | sensor     | 0           |                         | Send sensor board status report |
-| 0x10       | poweriface | controller | 2           | 0xLL 0xHH               | Power board status report (0xHHLL are the contents of the 16-bit shift register) |
-| 0x1        | sensor     | controller | 2           | 0bABCDEFGH 0b00000IJK   | Sensor board status report (ABCDEFGHIJK are the states of the end switches, dispenser empty switches and the rest switch) |
+| 0x10       | poweriface | any        | 2           | 0xLL 0xHH               | Power board status report (0xHHLL are the contents of the 16-bit shift register) |
+| 0x1        | sensor     | any        | 2           | 0bABCDEFGH 0b00000IJK   | Sensor board status report (ABCDEFGHIJK are the states of the end switches, dispenser empty switches and the rest switch) |
