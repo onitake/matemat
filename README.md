@@ -66,6 +66,13 @@ End switch feedback interface.
 
 Senses the status of the end switches and sends CAN bus messages on changes.
 
+This module requires firmware. Connect an Atmel programmer to the ISP header,
+change into the firmware directory `feedback/firmware/` and run:
+
+```shell
+make flash
+```
+
 ### poweriface
 
 Interface between CAN bus and power board.
@@ -124,14 +131,12 @@ The final wiring should look like this:
 Bus communication only makes use of basic CAN features. No higher-level
 protocols such as CiA, EtherCAN, VSCP or similar are required.
 
-Extended 29-bit CAN adressing mode is used.
+Normal 11-bit CAN adressing mode is used.
 
 This is the list of supported message IDs:
 
-| Message ID | Sender     | Receiver   | Data Length | Data Format             | Description |
-|------------|------------|------------|-------------|-------------------------|-------------|
-| 0x1000     | controller | poweriface | 1           | 0b00000MMM              | Start dispensing from slot M (0-5) |
-| 0x100      | any        | poweriface | 0           |                         | Send power board status report |
-| 0x101      | any        | sensor     | 0           |                         | Send sensor board status report |
-| 0x10       | poweriface | any        | 2           | 0xLL 0xHH               | Power board status report (0xHHLL are the contents of the 16-bit shift register) |
-| 0x1        | sensor     | any        | 2           | 0bABCDEFGH 0b00000IJK   | Sensor board status report (ABCDEFGHIJK are the states of the end switches, dispenser empty switches and the rest switch) |
+| Message ID | Sender     | Receiver   | RTR Support? |Data Length | Data Format             | Description |
+|------------|------------|------------|--------------|------------|-------------------------|-------------|
+| 0x10       | feedback   | any        | yes          | 2          | 0b00000KJI 0bHGFEDCBA   | Feedback module status report (A..E = end switch D..H, F..J = empty switch D..H, K = reset switch, 0 = off, 1 = on) |
+| 0x11       | poweriface | any        | yes          | 2          | 0bHHHHHHHH 0bLLLLLLLL   | Power module status report (0xHHLL are the contents of the 16-bit shift register) |
+| 0x21       | controller | poweriface | no           | 1          | 0b00000MMM              | Start dispensing from slot M (0-4) |
