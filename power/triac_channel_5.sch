@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 11
+Sheet 7 11
 Title ""
 Date "19 jan 2013"
 Rev ""
@@ -14,223 +14,137 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L matemat_power-rescue:MOC3022M-matemat_power-rescue U501
+L Relay_SolidState:MOC3022M U501
 U 1 1 50FB1912
 P 4200 4550
 F 0 "U501" H 3986 4729 40  0000 C CNN
 F 1 "MOC3022M" H 4300 4365 40  0000 C CNN
-F 2 "TOpto_6" H 4036 4375 29  0000 C CNN
-F 3 "" H 4200 4550 60  0001 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm_LongPads" H 4036 4375 29  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MOC3023M-D.PDF" H 4200 4550 60  0001 C CNN
 	1    4200 4550
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R-matemat_power-rescue R501
+L Device:R R501
 U 1 1 50FB1948
 P 3850 4100
 F 0 "R501" V 3950 4100 50  0000 C CNN
 F 1 "1k" V 3850 4100 50  0000 C CNN
-F 2 "SM0805" H 3850 4100 60  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3850 4100 60  0001 C CNN
 F 3 "" H 3850 4100 60  0001 C CNN
 	1    3850 4100
 	-1   0    0    1   
 $EndComp
 $Comp
-L matemat_power-rescue:R-matemat_power-rescue R503
+L Device:R R503
 U 1 1 50FB1B13
 P 5600 3850
 F 0 "R503" V 5500 3850 50  0000 C CNN
 F 1 "470" V 5600 3850 50  0000 C CNN
-F 2 "through_R" H 5600 3850 60  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 5600 3850 60  0001 C CNN
 F 3 "" H 5600 3850 60  0001 C CNN
 	1    5600 3850
 	0    1    1    0   
 $EndComp
 $Comp
-L matemat_power-rescue:R-matemat_power-rescue R504
+L Device:R R504
 U 1 1 50FB1B1E
 P 6450 4200
 F 0 "R504" V 6350 4200 50  0000 C CNN
 F 1 "100" V 6450 4200 50  0000 C CNN
-F 2 "through_R" H 6450 4200 60  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 6450 4200 60  0001 C CNN
 F 3 "" H 6450 4200 60  0001 C CNN
 	1    6450 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R-matemat_power-rescue R505
+L Device:R R505
 U 1 1 50FB1B29
 P 5600 4950
 F 0 "R505" V 5500 4950 50  0000 C CNN
 F 1 "100" V 5600 4950 50  0000 C CNN
-F 2 "SM0805" H 5600 4950 60  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5600 4950 60  0001 C CNN
 F 3 "" H 5600 4950 60  0001 C CNN
 	1    5600 4950
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:C-matemat_power-rescue C501
+L Device:C C501
 U 1 1 50FB1C81
 P 5250 4200
 F 0 "C501" H 4950 4300 50  0000 L CNN
 F 1 "10n" H 4950 4200 50  0000 L CNN
-F 2 "C2" V 5100 3950 60  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L7.0mm_W2.5mm_P5.00mm" V 5100 3950 60  0001 C CNN
 F 3 "" H 5250 4200 60  0001 C CNN
 	1    5250 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:R-matemat_power-rescue R502
+L Device:R R502
 U 1 1 50FB1CF2
 P 4950 4650
 F 0 "R502" V 4850 4650 50  0000 C CNN
 F 1 "100" V 4950 4650 50  0000 C CNN
-F 2 "through_R" H 4950 4650 60  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" H 4950 4650 60  0001 C CNN
 F 3 "" H 4950 4650 60  0001 C CNN
 	1    4950 4650
 	0    1    1    0   
 $EndComp
 $Comp
-L matemat_power-rescue:TRIAC_IEC-matemat_power-rescue T501
+L Triac_Thyristor:BT136-500 T501
 U 1 1 50FB18FA
 P 5950 4550
 F 0 "T501" V 5900 4750 40  0000 C CNN
 F 1 "BT136" V 6000 4750 40  0000 C CNN
-F 2 "_sto-TO220V" H 5950 4550 60  0001 C CNN
-F 3 "" H 5950 4550 60  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5950 4550 60  0001 C CNN
+F 3 "http://www.micropik.com/PDF/BT136-600.pdf" H 5950 4550 60  0001 C CNN
 	1    5950 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L matemat_power-rescue:GNDPWR-matemat_power-rescue #PWR01
-U 1 1 50FB1E40
-P 5250 4450
-F 0 "#PWR01" H 5250 4500 40  0001 C CNN
-F 1 "GNDPWR" H 5250 4370 40  0000 C CNN
-F 2 "" H 5250 4450 60  0001 C CNN
-F 3 "" H 5250 4450 60  0001 C CNN
-	1    5250 4450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 4450 5250 4400
 $Comp
-L matemat_power-rescue:GNDPWR-matemat_power-rescue #PWR02
-U 1 1 50FB1EFA
-P 5950 5250
-F 0 "#PWR02" H 5950 5300 40  0001 C CNN
-F 1 "GNDPWR" H 5950 5170 40  0000 C CNN
-F 2 "" H 5950 5250 60  0001 C CNN
-F 3 "" H 5950 5250 60  0001 C CNN
-	1    5950 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 5250 5950 4750
-$Comp
-L matemat_power-rescue:GNDPWR-matemat_power-rescue #PWR03
-U 1 1 50FB1F9D
-P 5600 5250
-F 0 "#PWR03" H 5600 5300 40  0001 C CNN
-F 1 "GNDPWR" H 5600 5170 40  0000 C CNN
-F 2 "" H 5600 5250 60  0001 C CNN
-F 3 "" H 5600 5250 60  0001 C CNN
-	1    5600 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 5250 5600 5200
-$Comp
-L matemat_power-rescue:GNDPWR-matemat_power-rescue #PWR04
-U 1 1 50FB1FD5
-P 6450 5250
-F 0 "#PWR04" H 6450 5300 40  0001 C CNN
-F 1 "GNDPWR" H 6450 5170 40  0000 C CNN
-F 2 "" H 6450 5250 60  0001 C CNN
-F 3 "" H 6450 5250 60  0001 C CNN
-	1    6450 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6450 4950 6450 5250
-$Comp
-L matemat_power-rescue:C-matemat_power-rescue C502
+L Device:C C502
 U 1 1 50FB21D6
 P 6450 4750
 F 0 "C502" H 6150 4850 50  0000 L CNN
 F 1 "220n" H 6150 4750 50  0000 L CNN
-F 2 "cnp_18x5mm" V 6300 4500 60  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L18.0mm_W5.0mm_P15.00mm_FKS3_FKP3" V 6300 4500 60  0001 C CNN
 F 3 "" H 6450 4750 60  0001 C CNN
 	1    6450 4750
 	-1   0    0    -1  
 $EndComp
 $Comp
-L matemat_power-rescue:CONN_2-matemat_power-rescue J501
+L Connector_Generic:Conn_01x02 J501
 U 1 1 50FB21F2
 P 6300 3350
 F 0 "J501" H 6500 3450 50  0000 C CNN
 F 1 "Output" V 6350 3350 40  0000 C CNN
-F 2 "Bornier_B2_Wago" H 6300 3350 60  0001 C CNN
+F 2 "TerminalBlock_WAGO:TerminalBlock_WAGO_236-102_1x02_P5.00mm_45Degree" H 6300 3350 60  0001 C CNN
 F 3 "" H 6300 3350 60  0001 C CNN
 F 4 "FAR 1283527" H 6300 3350 60  0001 C CNN "Reference"
 F 5 "0,84" H 6300 3350 60  0001 C CNN "prix"
 	1    6300 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L matemat_power-rescue:HT-matemat_power-rescue #PWR05
-U 1 1 50FB22BF
-P 5950 2950
-F 0 "#PWR05" H 5950 3070 20  0001 C CNN
-F 1 "HT" H 5950 3040 30  0000 C CNN
-F 2 "" H 5950 2950 60  0001 C CNN
-F 3 "" H 5950 2950 60  0001 C CNN
-	1    5950 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5950 2950 5950 3250
-Wire Wire Line
-	4550 3850 5350 3850
-Wire Wire Line
-	5250 4000 5250 3850
+	4550 3850 5250 3850
 Connection ~ 5250 3850
 Wire Wire Line
-	5950 3450 5950 4350
-Wire Wire Line
-	6450 4550 6450 4450
+	5950 3450 5950 3850
 Wire Wire Line
 	4550 4450 4550 3850
-Wire Wire Line
-	6450 3850 6450 3950
 Connection ~ 5950 3850
-Wire Wire Line
-	5850 3850 6450 3850
-Wire Wire Line
-	5600 4700 5600 4650
 Connection ~ 5600 4650
 Text HLabel 3400 3700 0    60   Input ~ 0
 In
 Wire Wire Line
 	3850 4850 3850 4650
 $Comp
-L matemat_power-rescue:GND-matemat_power-rescue #PWR06
-U 1 1 50FB2A82
-P 3850 4850
-F 0 "#PWR06" H 3850 4850 30  0001 C CNN
-F 1 "GND" H 3850 4780 30  0001 C CNN
-F 2 "" H 3850 4850 60  0001 C CNN
-F 3 "" H 3850 4850 60  0001 C CNN
-	1    3850 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L matemat_power-rescue:C-matemat_power-rescue C503
+L Device:C C503
 U 1 1 50FB266D
 P 6900 4750
 F 0 "C503" H 6600 4850 50  0000 L CNN
 F 1 "DNP" H 6600 4750 50  0000 L CNN
-F 2 "cnp_13x4mm" V 6750 4500 60  0001 C CNN
+F 2 "Capacitor_THT:C_Rect_L13.0mm_W4.0mm_P10.00mm_FKS3_FKP3_MKS4" V 6750 4500 60  0001 C CNN
 F 3 "" H 6900 4750 60  0001 C CNN
 	1    6900 4750
 	-1   0    0    -1  
@@ -238,21 +152,129 @@ $EndComp
 Wire Wire Line
 	6450 5000 6900 5000
 Wire Wire Line
-	6900 5000 6900 4950
-Connection ~ 6450 5000
-Wire Wire Line
-	6900 4550 6900 4500
-Wire Wire Line
 	6900 4500 6450 4500
 Connection ~ 6450 4500
 Wire Wire Line
-	4550 4650 4700 4650
-Wire Wire Line
-	5200 4650 5800 4650
-Wire Wire Line
 	3400 3700 3850 3700
 Wire Wire Line
-	3850 3700 3850 3850
+	5950 3850 6450 3850
 Wire Wire Line
-	3850 4350 3850 4450
+	5600 4650 5800 4650
+$Comp
+L power:GND #PWR?
+U 1 1 6040378B
+P 3850 4850
+F 0 "#PWR?" H 3850 4600 50  0001 C CNN
+F 1 "GND" H 3855 4677 50  0000 C CNN
+F 2 "" H 3850 4850 50  0001 C CNN
+F 3 "" H 3850 4850 50  0001 C CNN
+	1    3850 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:NEUT #PWR?
+U 1 1 60403AAF
+P 5250 4400
+F 0 "#PWR?" H 5250 4250 50  0001 C CNN
+F 1 "NEUT" H 5265 4573 50  0000 C CNN
+F 2 "" H 5250 4400 50  0001 C CNN
+F 3 "" H 5250 4400 50  0001 C CNN
+	1    5250 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:LINE #PWR?
+U 1 1 604044D5
+P 5950 2950
+F 0 "#PWR?" H 5950 2800 50  0001 C CNN
+F 1 "LINE" H 5965 3123 50  0000 C CNN
+F 2 "" H 5950 2950 50  0001 C CNN
+F 3 "" H 5950 2950 50  0001 C CNN
+	1    5950 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:NEUT #PWR?
+U 1 1 60404F19
+P 5600 5250
+F 0 "#PWR?" H 5600 5100 50  0001 C CNN
+F 1 "NEUT" H 5615 5423 50  0000 C CNN
+F 2 "" H 5600 5250 50  0001 C CNN
+F 3 "" H 5600 5250 50  0001 C CNN
+	1    5600 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:NEUT #PWR?
+U 1 1 604051AA
+P 5950 5250
+F 0 "#PWR?" H 5950 5100 50  0001 C CNN
+F 1 "NEUT" H 5965 5423 50  0000 C CNN
+F 2 "" H 5950 5250 50  0001 C CNN
+F 3 "" H 5950 5250 50  0001 C CNN
+	1    5950 5250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:NEUT #PWR?
+U 1 1 604054C8
+P 6450 5250
+F 0 "#PWR?" H 6450 5100 50  0001 C CNN
+F 1 "NEUT" H 6465 5423 50  0000 C CNN
+F 2 "" H 6450 5250 50  0001 C CNN
+F 3 "" H 6450 5250 50  0001 C CNN
+	1    6450 5250
+	-1   0    0    1   
+$EndComp
+Connection ~ 6450 5000
+Wire Wire Line
+	6450 5000 6450 5250
+Wire Wire Line
+	6100 3350 5950 3350
+Wire Wire Line
+	5950 2950 5950 3350
+Wire Wire Line
+	5950 3450 6100 3450
+Wire Wire Line
+	5750 3850 5950 3850
+Wire Wire Line
+	5250 3850 5450 3850
+Wire Wire Line
+	5250 3850 5250 4050
+Wire Wire Line
+	5250 4400 5250 4350
+Wire Wire Line
+	4500 4450 4550 4450
+Wire Wire Line
+	4500 4650 4800 4650
+Wire Wire Line
+	3900 4450 3850 4450
+Wire Wire Line
+	3900 4650 3850 4650
+Wire Wire Line
+	3850 4250 3850 4450
+Wire Wire Line
+	3850 3700 3850 3950
+Wire Wire Line
+	5100 4650 5600 4650
+Wire Wire Line
+	5600 4650 5600 4800
+Wire Wire Line
+	5600 5100 5600 5250
+Wire Wire Line
+	5950 4700 5950 5250
+Wire Wire Line
+	5950 3850 5950 4400
+Wire Wire Line
+	6450 4350 6450 4500
+Wire Wire Line
+	6450 3850 6450 4050
+Wire Wire Line
+	6450 4500 6450 4600
+Wire Wire Line
+	6900 4500 6900 4600
+Wire Wire Line
+	6900 4900 6900 5000
+Wire Wire Line
+	6450 4900 6450 5000
 $EndSCHEMATC

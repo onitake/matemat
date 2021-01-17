@@ -1,5 +1,5 @@
-update=Mon 01 Apr 2019 12:20:18 CEST
-last_client=eeschema
+update=Sun 17 Jan 2021 12:47:51 CET
+last_client=kicad
 [pcbnew]
 version=1
 LastNetListRead=matemat_power.net
@@ -38,3 +38,13 @@ LibName17=inductances
 [eeschema]
 version=1
 LibDir=
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
