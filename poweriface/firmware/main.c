@@ -1,4 +1,5 @@
 #include <inttypes.h>
+#include <stdbool.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
@@ -101,6 +102,8 @@ void strobe() {
 static void send_status() {
 	// Bit-bang register contents in (also send out zeros, but don't strobe)
 	uint16_t status = bang(0);
+	// Send the current state back out to prevent glitches
+	bang(status);
 
 	if (can_check_free_buffer()) {
 		can_t msg = {
