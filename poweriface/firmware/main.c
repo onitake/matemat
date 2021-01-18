@@ -113,8 +113,11 @@ static void send_status() {
 }
 
 static void fire_relay(uint8_t num) {
-	if (num < 5) {
-		uint16_t out = 0x0080 >> num;
+	if (num == 0) {
+		bang(0);
+		strobe();
+	} else if (num <= 5) {
+		uint16_t out = 0x0080 >> (num - 1);
 		bang(out);
 		strobe();
 	}
@@ -133,6 +136,7 @@ static void loop() {
 				}
 			case 0x21:
 				if (msg.length == 1) {
+					// stop (d0 = 0) or fire relay (d0 = 1..5)
 					fire_relay(msg.data[0]);
 					// also send out the current status
 					send_status();

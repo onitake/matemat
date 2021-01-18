@@ -139,4 +139,4 @@ This is the list of supported message IDs:
 |------------|------------|------------|--------------|------------|-------------------------|-------------|
 | 0x10       | feedback   | any        | yes          | 2          | 0b00000KJI 0bHGFEDCBA   | Feedback module status report (A..E = end switch D..H, F..J = empty switch D..H, K = reset switch, 0 = off, 1 = on) |
 | 0x11       | poweriface | any        | yes          | 2          | 0bHHHHHHHH 0bLLLLLLLL   | Power module status report (0xHHLL are the contents of the 16-bit shift register) |
-| 0x21       | controller | poweriface | no           | 1          | 0b00000MMM              | Start dispensing from slot M (0-4) |
+| 0x21       | controller | poweriface | no           | 1          | 0b00000MMM              | Start dispensing from slot M (1-5) or stop all dispensers (M = 0) |
