@@ -134,6 +134,8 @@ static void loop() {
 			case 0x21:
 				if (msg.length == 1) {
 					fire_relay(msg.data[0]);
+					// also send out the current status
+					send_status();
 				}
 			}
 		}
