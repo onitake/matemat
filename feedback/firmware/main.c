@@ -77,6 +77,7 @@ static void loop() {
 				if (msg.flags.rtr) {
 					send_status();
 				}
+				break;
 			case 0x4f:
 				if (msg.length == 1) {
 					report_change = msg.data[0] ? true : false;

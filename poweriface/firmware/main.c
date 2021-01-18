@@ -137,6 +137,7 @@ static void loop() {
 				if (msg.flags.rtr) {
 					send_status();
 				}
+				break;
 			case 0x21:
 				if (msg.length == 1) {
 					// stop (d0 = 0) or fire relay (d0 = 1..5)
@@ -144,6 +145,7 @@ static void loop() {
 					// also send out the current status
 					send_status();
 				}
+				break;
 			case 0x4f:
 				if (msg.length == 1) {
 					report_change = msg.data[0] ? true : false;
