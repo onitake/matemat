@@ -131,7 +131,10 @@ The final wiring should look like this:
 Bus communication only makes use of basic CAN features. No higher-level
 protocols such as CiA, EtherCAN, VSCP or similar are required.
 
-Normal 11-bit CAN adressing mode is used.
+Normal 11-bit CAN adressing mode is used. For messages that support RTR, any
+module can send a remote transmission request and the addressed module will
+respond with the described message. A module may also send the message
+without being probed.
 
 This is the list of supported message IDs:
 
@@ -140,3 +143,4 @@ This is the list of supported message IDs:
 | 0x10       | feedback   | any        | yes          | 2          | 0b00000KJI 0bHGFEDCBA   | Feedback module status report (A..E = end switch D..H, F..J = empty switch D..H, K = reset switch, 0 = off, 1 = on) |
 | 0x11       | poweriface | any        | yes          | 2          | 0bHHHHHHHH 0bLLLLLLLL   | Power module status report (0xHHLL are the contents of the 16-bit shift register) |
 | 0x21       | controller | poweriface | no           | 1          | 0b00000MMM              | Start dispensing from slot M (1-5) or stop all dispensers (M = 0) |
+| 0x4f       | any        | any        | no           | 1          | 0b0000000E              | Enable (E = 1) or disable (E = 0) automatic status updates on all modules |
