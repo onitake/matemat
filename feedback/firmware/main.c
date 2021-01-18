@@ -74,9 +74,7 @@ static void loop() {
 		if (status != 0) {
 			switch (msg.id) {
 			case 0x10:
-				if (msg.flags.rtr) {
-					send_status();
-				}
+				send_status();
 				break;
 			case 0x4f:
 				if (msg.length == 1) {
