@@ -4,6 +4,8 @@
 #include <util/delay.h>
 #include <can.h>
 
+static bool report_change = false;
+
 static void init() {
 	// Set PB as input, pull-up off
 	DDRB = 0;
@@ -15,16 +17,26 @@ static void init() {
 	// Regular receive/transmit mode
 	can_set_mode(NORMAL_MODE);
 
-	// Filter for status requests
-	can_filter_t filter = {
-		.id = 0x10,
-		.mask = 0x7ff,
+	// Filter for messages addressed to us (RTR on)
+	can_filter_t us = {
+		.id = 0x000,
+		.mask = 0x00f,
 		.flags = {
 			.rtr = 1,
 			.extended = 0,
 		},
 	};
-	can_set_filter(0, &filter);
+	can_set_filter(0, &us);
+	// Filter for public messages (RTR off)
+	can_filter_t pub = {
+		.id = 0x00f,
+		.mask = 0x00f,
+		.flags = {
+			.rtr = 0,
+			.extended = 0,
+		},
+	};
+	can_set_filter(1, &pub);
 
 	// Enable interrupts to start reception
 	sei();
@@ -65,6 +77,11 @@ static void loop() {
 				if (msg.flags.rtr) {
 					send_status();
 				}
+			case 0x4f:
+				if (msg.length == 1) {
+					report_change = msg.data[0] ? true : false;
+				}
+				break;
 			}
 		}
 	}

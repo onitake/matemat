@@ -4,6 +4,8 @@
 #include <util/delay.h>
 #include <can.h>
 
+static bool report_change = false;
+
 static void init() {
 	// Enable GPIO: PB2, PB3, PB4 output, low; PB5 input, pull-up on
  	PORTB = (PORTB & ~(_BV(PB2) | _BV(PB3) | _BV(PB4))) | _BV(PB5);
@@ -14,25 +16,26 @@ static void init() {
 	// Regular receive/transmit mode
 	can_set_mode(NORMAL_MODE);
 
-	// Filter for status requests and dispense commands
-	can_filter_t filter = {
-		.id = 0x11,
-		.mask = 0x7ff,
+	// Filter for messages addressed to us (RTR on)
+	can_filter_t us = {
+		.id = 0x001,
+		.mask = 0x00f,
 		.flags = {
 			.rtr = 1,
 			.extended = 0,
 		},
 	};
-	can_set_filter(0, &filter);
-	can_filter_t disp = {
-		.id = 0x21,
-		.mask = 0x7ff,
+	can_set_filter(0, &us);
+	// Filter for public messages (RTR off)
+	can_filter_t pub = {
+		.id = 0x00f,
+		.mask = 0x00f,
 		.flags = {
 			.rtr = 0,
 			.extended = 0,
 		},
 	};
-	can_set_filter(1, &disp);
+	can_set_filter(1, &pub);
 
 	// Enable interrupts to start reception
 	sei();
@@ -141,6 +144,11 @@ static void loop() {
 					// also send out the current status
 					send_status();
 				}
+			case 0x4f:
+				if (msg.length == 1) {
+					report_change = msg.data[0] ? true : false;
+				}
+				break;
 			}
 		}
 	}
