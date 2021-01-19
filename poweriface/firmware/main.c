@@ -4,6 +4,7 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <can.h>
+#include <messages.h>
 
 static bool report_change = false;
 

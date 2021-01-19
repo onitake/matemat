@@ -1,5 +1,6 @@
 PRG            = poweriface
-AVRCANLIB_PATH = ../../avr-can-lib
+PROJ_ROOT      = ../..
+AVRCANLIB_PATH = $(PROJ_ROOT)/avr-can-lib
 OBJ            = main.o \
 	$(AVRCANLIB_PATH)/src/at90can_buffer.o \
 	$(AVRCANLIB_PATH)/src/at90can.o \
@@ -21,7 +22,7 @@ PROGRAMMER     = usbtiny
 MCU_TARGET     = atmega32m1
 DEFS           = -DF_CPU=16000000UL -DHAS_CAN_CONFIG_H
 
-INCLUDES       = -I. -I$(AVRCANLIB_PATH)
+INCLUDES       = -I. -I$(PROJ_ROOT) -I$(AVRCANLIB_PATH)
 LIBS           =
 
 LFUSE          = 0xdf
