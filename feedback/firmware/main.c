@@ -75,10 +75,13 @@ static void send_status(uint16_t status) {
 static void loop() {
 	// Check for status changes
 	uint16_t new_status = get_status();
-	if (report_change && new_status != saved_status) {
-		send_status(new_status);
+	if (new_status != saved_status) {
+		if (report_change) {
+			send_status(new_status);
+		}
 		saved_status = new_status;
 	}
+
 	// Check for new messages
 	if (can_check_message()) {
 		can_t msg = { 0 };
