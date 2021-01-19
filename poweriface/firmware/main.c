@@ -20,8 +20,8 @@ static void init() {
 
 	// Filter for messages addressed to us (RTR on)
 	can_filter_t us = {
-		.id = 0x001,
-		.mask = 0x00f,
+		.id = CAN_HOSTID_POWER,
+		.mask = CAN_HOSTID_MASK,
 		.flags = {
 			.rtr = 1,
 			.extended = 0,
@@ -30,8 +30,8 @@ static void init() {
 	can_set_filter(0, &us);
 	// Filter for public messages (RTR off)
 	can_filter_t pub = {
-		.id = 0x00f,
-		.mask = 0x00f,
+		.id = CAN_HOSTID_BROADCAST,
+		.mask = CAN_HOSTID_MASK,
 		.flags = {
 			.rtr = 0,
 			.extended = 0,
@@ -108,7 +108,7 @@ static void send_status() {
 
 	if (can_check_free_buffer()) {
 		can_t msg = {
-			.id = 0x11,
+			.id = CAN_MSG_POWER_STATUS,
 			.flags = {
 				.rtr = 0,
 			},
@@ -137,10 +137,10 @@ static void loop() {
 		uint8_t status = can_get_message(&msg);
 		if (status != 0) {
 			switch (msg.id) {
-			case 0x11:
+			case CAN_MSG_POWER_STATUS:
 				send_status();
 				break;
-			case 0x21:
+			case CAN_MSG_POWER_DISPENSE:
 				if (msg.length == 1) {
 					// stop (d0 = 0) or fire relay (d0 = 1..5)
 					fire_relay(msg.data[0]);
@@ -148,7 +148,7 @@ static void loop() {
 					send_status();
 				}
 				break;
-			case 0x4f:
+			case CAN_MSG_AUTO_STATUS:
 				if (msg.length == 1) {
 					report_change = msg.data[0] ? true : false;
 				}
