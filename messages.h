@@ -2,7 +2,6 @@
 #define _MESSAGES_H
 
 #include <stdint.h>
-#include <stdbool.h>
 
 #define CAN_HOSTID_FEEDBACK 0x000
 #define CAN_HOSTID_POWER 0x001
