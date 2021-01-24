@@ -1,7 +1,0 @@
-Atmel ATmega128A http://www.atmel.com/Images/Atmel-8151-8-bit-AVR-ATmega128A_Datasheet.pdf
-NXP BT136 http://www.nxp.com/documents/data_sheet/BT136_SERIES.pdf
-Maxim MAX483 http://datasheets.maximintegrated.com/en/ds/MAX1487-MAX491.pdf
-FTDI FT232RL http://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf
-MEI CASHFLOW 129 http://www.norpay.se/pdf/cf126/126-129_dg_gb3_709623001.pdf
-ST Microelectronics ST232C http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00001703.pdf
-Europe Bill Acceptor EBA-10/11 (customised, not publically available)
